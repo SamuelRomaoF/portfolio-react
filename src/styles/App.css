@@ -1,0 +1,5 @@
+/* Espaçamento para seções para evitar sobreposição com o cabeçalho */
+section {
+  scroll-margin-top: 80px; /* Este é um valor aproximado, ajuste conforme necessário */
+  padding-top: 1rem;
+} 

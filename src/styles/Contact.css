@@ -1,0 +1,36 @@
+.contact-section {
+  margin-top: 6rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.contact-email {
+  font-size: 2rem;
+  color: var(--accent);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4rem;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: var(--accent-hover);
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .contact-email {
+    font-size: 1.5rem;
+  }
+} 

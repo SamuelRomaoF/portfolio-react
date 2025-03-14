@@ -1,0 +1,98 @@
+.about-section {
+  margin-top: 6rem;
+  text-align: left;
+  padding: 0;
+  display: block;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  display: block;
+}
+
+.about-content-text {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px var(--shadow);
+  border: 1px solid var(--border);
+  max-width: 100%;
+  margin: 0;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.about-description:last-child {
+  margin-bottom: 0;
+}
+
+.about-description:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.cv-button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.cv-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent);
+  color: var(--button-text);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.cv-button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px var(--shadow);
+}
+
+.cv-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cv-button:hover svg {
+  transform: translateX(2px);
+}
+
+.demo-button {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.demo-button:hover {
+  background-color: var(--accent);
+  color: var(--button-text);
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .about-content-text {
+    padding: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+} 

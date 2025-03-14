@@ -1,0 +1,209 @@
+/* Reset e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Cores do tema claro */
+  --background: #ffffff;
+  --background-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --accent: #8B5CF6;
+  --accent-hover: #7c3aed;
+  --border: #dee2e6;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --header-bg: #ffffff;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  /* Cores do tema escuro */
+  --background: #1a1a1a;
+  --background-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --accent: #8B5CF6;
+  --accent-hover: #9775fa;
+  --border: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --card-bg: #2d2d2d;
+  --header-bg: #1a1a1a;
+  --button-text: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--background);
+  transition: background-color 0.3s ease;
+}
+
+/* Ajuste para navegação por âncora, evita que o conteúdo seja coberto pelo cabeçalho fixo */
+section {
+  scroll-margin-top: 80px; /* Ajuste conforme a altura do seu cabeçalho */
+  padding-top: 1rem;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+/* Header actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botão de tema */
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--background-secondary);
+  transform: rotate(15deg);
+}
+
+/* Header */
+.header-wrapper {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.logo-text {
+  color: var(--accent);
+}
+
+/* Links de navegação */
+.nav-link {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-link-active {
+  color: var(--accent);
+}
+
+/* Seções de conteúdo */
+.about-content-text,
+.tech-card,
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.about-description,
+.tech-stack-description,
+.project-description {
+  color: var(--text-secondary);
+}
+
+/* Botões */
+.cv-button,
+.project-link {
+  background-color: var(--accent);
+  color: var(--button-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.cv-button:hover,
+.project-link:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px var(--shadow);
+}
+
+/* Links de projeto */
+.project-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: none;
+  color: var(--text-secondary);
+  box-shadow: none;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  background: none;
+  box-shadow: none;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Otimizações para performance */
+@media (prefers-reduced-data: reduce) {
+  img {
+    content-visibility: auto;
+  }
+} 

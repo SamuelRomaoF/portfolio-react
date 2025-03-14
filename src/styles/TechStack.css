@@ -1,0 +1,77 @@
+.tech-stack-section {
+  margin-top: 6rem;
+  text-align: center;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tech-stack-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: var(--card-bg);
+  width: 120px;
+  height: 120px;
+  border: 1px solid var(--border);
+}
+
+.tech-card-hovered {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.tech-icon {
+  margin-bottom: 10px;
+}
+
+.tech-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .tech-card {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+  }
+  
+  .tech-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+} 

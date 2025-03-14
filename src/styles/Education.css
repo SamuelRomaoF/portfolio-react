@@ -1,0 +1,124 @@
+.education-section {
+  margin-bottom: 4rem;
+}
+
+.education-item {
+  margin-bottom: 2.5rem;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.education-type {
+  background-color: #10B981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: medium;
+}
+
+.education-institution, .education-period {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.education-institution svg, .education-period svg {
+  margin-right: 0.5rem;
+}
+
+/* Estilos para a seção de cursos complementares */
+.courses-title {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-item {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.course-name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.course-name svg {
+  margin-right: 0.5rem;
+  color: #10B981;
+}
+
+.course-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.course-institution {
+  color: var(--text-secondary);
+}
+
+.course-period {
+  color: var(--text-secondary);
+}
+
+.course-certificate {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .education-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .education-type {
+    align-self: flex-start;
+  }
+  
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+} 

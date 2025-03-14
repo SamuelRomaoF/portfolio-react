@@ -1,0 +1,59 @@
+.experience-section {
+  margin-top: 6rem;
+}
+
+.job-item {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2.5rem;
+}
+
+.job-item.last-item {
+  margin-bottom: 4rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.job-type {
+  background-color: #10B981;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: medium;
+}
+
+.job-company, .job-location, .job-period {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.job-company svg, .job-location svg, .job-period svg {
+  margin-right: 0.5rem;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  .job-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .job-type {
+    align-self: flex-start;
+  }
+} 

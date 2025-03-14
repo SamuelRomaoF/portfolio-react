@@ -1,6 +1,6 @@
 # Meu Portfólio - React com Tailwind CSS
 
-Este é um projeto de portfólio pessoal desenvolvido com React e estilizado com Tailwind CSS.
+Este é o meu projeto de portfólio pessoal desenvolvido com React e estilizado com Tailwind CSS.
 
 ## Tecnologias Utilizadas
 

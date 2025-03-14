@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import translations from '../locales';
+// Removendo a importação não utilizada
+// import translations from '../locales';
 
 const LanguageContext = createContext();
 
@@ -17,7 +18,7 @@ export const LanguageProvider = ({ children }) => {
     return browserLang === 'en-US' ? 'en-US' : 'pt-BR';
   });
 
-  const [translations, setTranslations] = useState(() => {
+  const [t, setTranslations] = useState(() => {
     return language === 'en-US' 
       ? require('../locales/en-US').default 
       : require('../locales/pt-BR').default;
@@ -46,7 +47,7 @@ export const LanguageProvider = ({ children }) => {
   }, [language]);
 
   return (
-    <LanguageContext.Provider value={{ language, t: translations, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, t, toggleLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
